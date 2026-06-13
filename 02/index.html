@@ -5,147 +5,119 @@
 <title>TWITTER</title>
 <meta charset="utf-8"/>
 <style type="text/css">
- 
- #workskin .twt {
-  float: center;
-  max-width: 20em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin: 0em auto;
-  border: 1px solid #c7c7c7;
-  border-radius: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+#workskin .tw {
+  max-width: 300px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: table;
+  margin: auto;
 }
 
-#workskin .twt-header {
+#workskin .twBody {
   overflow: hidden;
-  margin-top: -0.5em;
-  margin-bottom: -2.8em;
-}
-
-#workskin .twt-icon-container {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: .1em;
+  border-color: #dddddd;
+  border-radius: .3em;
   float: left;
+  min-width: 100%;
+  position: relative;
+  padding: 1em;
+  margin-left: -1em;
 }
 
-#workskin .twt-icon {
-  border-radius: 50%;
-  width: 3em;
+#workskin .twImage {
+  width: 111%;
+  height: auto;
+  border-radius: .5em;
+  margin: .2em 1em .2em 0em;
 }
 
-#workskin .twt-iconquote {
+#workskin .twAvatar {
+  width: 45px;
+  height: auto;
+  float: left;
+  margin: 0em 0.3em .3em 0em;
   border-radius: 50%;
   width: 2em;
 }
 
-#workskin .twt-id {
-  padding-left: 1em;
-  overflow: hidden;
+#workskin .twIcon {
+  width: 17px;
+  height: auto;
 }
 
-#workskin .twt-name {
-  font-weight: bold;
+#workskin .twFollow {
+  position: relative;
+  top: -1.4em;
+  width: 17px;
+  height: auto;
+  display: inline-block;
+  float: right;
+  color: #5EA9DD;
 }
 
-#workskin .twt-name:hover {
-  text-decoration: underline;
-  cursor: pointer;
+#workskin .twReplyIcon {
+  width: 17px;
+  height: auto;
 }
 
-#workskin .twt-handle {
-  font-size: 0.9em;
-  color: #657786;
+#workskin .twRetweetIcon {
+  width: 22px;
+  height: auto;
+  margin-right: .1em;
 }
 
-#workskin .twt-handle:hover {
-  cursor: pointer;
+#workskin .twHeartIcon {
+  width: 13px;
+  height: auto;
+  margin-right: .1em;
 }
 
-#workskin .twt-content {
-  font-size: 1em;
-  margin-bottom: -1em;
+#workskin .twUserName {
+  position: relative;
+  top: -.2em;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101010;
 }
 
-#workskin .twt-contentquote {
-  font-size: 1em;
-  margin-bottom: -0.5em;
+#workskin .twUserHandle {
+  position: relative;
+  top: -.5em;
+  font-size: 13px;
+  font-weight: 300;
+  color: #697882;
 }
 
-#workskin .twt-timestamp {
-  color: #657786;
-  font-size: 0.7em;
+#workskin .twText {
+  display: inline-block;
+  color: #101010;
 }
 
-#workskin hr.twt-sep,
-#workskin hr.twt-sep-reply {
-  border: none;
-  height: 1px;
+#workskin .twTimeStamp {
+  display: inline-block;
+  font-size: 14px;
   width: 100%;
-  margin-top: -0.5em;
-  margin-bottom: -0.5em;
-  background-color: #e6e6e6;
+  font-weight: 300;
+  color: #697882;
+  padding: .5em 0em .5em 0em;
 }
 
-#workskin .twt-stat1 {
-  color: #657786;
-  font-size: 0.7em;
+#workskin .twRetweet {
+  font-size: 14px;
+  color: #697882;
+  margin: 1em 1em 1em 1em;
 }
 
-#workskin .twt-quotebox {
-  padding-left: 1em;
-  padding-right: 1em;
-  border: 1px solid #c7c7c7;
-  border-radius: 10px;
+#workskin .twLike {
+  font-size: 14px;
+  color: #697882;
 }
 
-#workskin .twt-image {
-  float: center;
-  max-width: 100%;
-  border: 1px solid #c7c7c7;
-  border-radius: 10px;
-  margin-bottom: -0.5em;
-}
-
-#workskin .twt-icon-replycontainer {
-  float: left;
-}
-
-#workskin .twt-replycontainer {
-  padding-left: 1em;
-  overflow: hidden;
-}
-
-#workskin .twt-replycontent {
-  margin-top: -1.5em;
-  margin-bottom: -0.5em;
-}
-
-#workskin .twt-stat2 {
-  color: #657786;
-  font-size: 0.7em;
-  margin-top: -2em;
-}
-
-#workskin .twt-social {
-  float: left;
-  margin-right: 2em;
-  margin-bottom: -0.5em;
-}
-
-#workskin .twt-socialimg {
-  height: 12px;
-  display: inline;
-  padding-right: 3px;
-}
-
-#workskin .twt-hl {
-  font-size: 0.9em;
-  color: #1DA1F2;
-}
-
-#workskin .twt-hl:hover {
-  text-decoration: underline;
-  cursor: pointer;
+#workskin .twLink {
+  color: #2C7BB8;
+  text-decoration: none;
 }
 
 </style>
@@ -153,32 +125,39 @@ Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 </head>
 
 <body>
-
-    <div class="twt">
-
-    <div class="twt-header">
-
-        <div class="twt-icon-container">
-            <img class="twt-icon" src="https://i.imgur.com/Q31haWS.jpg">
-        </div>
-
-        <div class="twt-id">
-            <span class="twt-name">barry</span><br />
-            <span class="twt-handle">@barrythebee</span>
-        </div>
-    
-    </div>
-    
-    <div class="twt-content">According to all known laws of aviation, 
-    there is no way a bee should be able to fly...🐝</div>
-    
-    <div class="twt-timestamp">8:14 AM · Oct 2, 2020</div>
-    
-    <hr class="twt-sep"><div class="twt-stat1">
-    <strong>23.3K</strong> Retweets &nbsp;&nbsp; 
-    <strong>924</strong> Quote Tweets &nbsp;&nbsp; 
-    <strong>72.1K</strong> Likes
-    </div>
-    
+<div class="tw">
+<p class="twBody">
+<span>
+<img class="twAvatar" src="[Insert the link to the Twitter avatar picture]" />
+</span>
+<span class="twUser"></span>
+<span class="twUserName">
+<strong>[Insert a Twitter username] </strong>
+</span>
+<img class="twIcon" src="http://imgur.com/eVQzzhT.png" /><br /> 
+<span class="twUserHandle">
+[Insert a Twitter user handle]
+</span>
+<img class="twFollow" src="http://imgur.com/p6lbN22.png" /><br />  
+<img class="twImage" src="[Insert the link to a picture that you would upload on tweet]" /> 
+<span class="twText">
+<a class="twLink" rel="nofollow">[Insert a Twitter user handle you're replying to]</a> 
+[Insert text for tweet]
+</span>
+<span class="twTimeStamp">
+[Hour]:[Minute] [AM/PM] - [Day] [Month] [Year]
+</span>
+<span></span>
+<img class="twReplyIcon" src="http://imgur.com/9dwkilY.png" />
+<span class="twRetweet">
+<img class="twRetweetIcon" src="http://imgur.com/ToOoCJz.png" /> 
+[Number of Retweet(/s)]
+</span>
+<span class="twLike">
+<img class="twHeartIcon" src="http://imgur.com/67stmhs.png" /> 
+[Number of Likes(/s)]
+</span>
+</p>
 </div>
 </body>
+</html>
