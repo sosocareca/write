@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<title>CARTAS</title>
+<meta charset="utf-8"/>
+<style type="text/css">
+    #workskin .letter {
+  fundo: #fff;
+  cor: #000;
+  preenchimento: 15px;
+  largura: 65%;
+  margem: 0 auto 25px;
+  exibir: bloco;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  posição: relativa;
+  alinhamento de texto: justificado;
+}
+
+#workskin .letter:antes,
+#workskin .letter:after {
+  contente: "";
+  altura: 98%;
+  posição: absoluta;
+  largura: 100%;
+  Índice z: -1;
+}
+
+#workskin .letter:before {
+  fundo: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  esquerda: -5px;
+  topo: 4px;
+  transformar: rotacionar(-2,5 graus);
+}
+
+#workskin .letter:after {
+  fundo: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  direita: -3px;
+  topo: 1px;
+  transformar: rotacionar(1,4 graus);
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div id="workskin">
+       <div class="letter">
+          <h1>TITULO</h1>
+          <p>Há um grande desejo em mim de sempre melhorar.
+Melhorar. É o que me faz feliz.
+E sempre que sinto que estou aprendendo menos, que a curva de aprendizado está nivelando, ou seja o que for, então não fico muito contente.
+E isso se aplica não só profissionalmente, como piloto, mas como pessoa.</p>
+       </div>
+    </div>
+</body>
+</html>
