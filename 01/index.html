@@ -4,41 +4,42 @@
 <title>CARTAS</title>
 <meta charset="utf-8"/>
 <style type="text/css">
-    #workskin .letter {
-  fundo: #fff;
-  cor: #000;
-  preenchimento: 15px;
-  largura: 65%;
-  margem: 0 auto 25px;
-  exibir: bloco;
+    
+#workskin .letter {
+  background: #fff;
+  color: #000;
+  padding: 15px;
+  width: 65%;
+  margin: 0 auto 25px;
+  display: block;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  posição: relativa;
-  alinhamento de texto: justificado;
+  position: relative;
+  text-align: justify;
 }
 
-#workskin .letter:antes,
+#workskin .letter:before,
 #workskin .letter:after {
-  contente: "";
-  altura: 98%;
-  posição: absoluta;
-  largura: 100%;
-  Índice z: -1;
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 #workskin .letter:before {
-  fundo: #fafafa;
+  background: #fafafa;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  esquerda: -5px;
-  topo: 4px;
-  transformar: rotacionar(-2,5 graus);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
 }
 
 #workskin .letter:after {
-  fundo: #f6f6f6;
+  background: #f6f6f6;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  direita: -3px;
-  topo: 1px;
-  transformar: rotacionar(1,4 graus);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
 }
 
 </style>
